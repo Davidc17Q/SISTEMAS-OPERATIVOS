@@ -281,7 +281,7 @@ int main() {
 
 ## 8. Compilación (paso a paso en la terminal de Linux)
 
-A continuaciòn la guia exacta de los comandos a seguir para ejecutar el programa:
+A continuación la guia exacta de los comandos a seguir para ejecutar el programa:
 
 - Abrir la terminal (Ctrl+Alt+T en Ubuntu/Linux Mint).
 - Ir a la carpeta del proyecto (ejemplo: ~/simulador_contexto):
@@ -330,7 +330,7 @@ Donde:
 - **main.c** → es el archivo de código fuente que se quiere compilar.
 - **-o procplanner** → le dice a gcc que el ejecutable generado se llame procplanner.
 
-Lo siguiente es la **ejecucion del simulador**, se debe usar el siguiente comando:
+Lo siguiente es la **ejecución del simulador**, se debe usar el siguiente comando:
 ```bash
 ./procplanner -f procesos.txt
 ```
@@ -339,7 +339,7 @@ Donde:
 - **procplanner** → es el ejecutable que se compilo en el paso anterior.
 - **-f procesos.txt** → es un argumento que el programa espera, y que en este caso le indica qué archivo de procesos debe cargar para la simulación.
 
-Para la **Visualizacion del log**:
+Para la **Visualización del log**:
 ```bash
 cat simulacion.log
 ```
@@ -349,7 +349,7 @@ Donde:
 
 ---
 
-## 9. Explicacion de simulacion.log
+## 9. Explicación de simulacion.log
 
 Aqui se tiene todo el registro de la simulacion que aparece en pantalla:
 
@@ -416,7 +416,7 @@ Significado:
 
 ---
 
-## 10. Detalles de implementacion
+## 10. Detalles de implementación
 
 - **PC (Program Counter):** inicia en 0, incrementa tras cada instrucción.
 - **Quantum:** máximo de instrucciones por turno.
@@ -426,7 +426,7 @@ Significado:
 - **Registro de operaciones:** todas las modificaciones se guardan para trazabilidad.
 
 
-## 11. Medicion de recursos
+## 11. Medición de recursos
 
 Los siguientes son los comandos a usar, ejecutando en la terminal para conocer la informacion del hardware:
 
@@ -447,7 +447,7 @@ free -h
 
 ---
 
-## 12. Conclusion
+## 12. Conclusión
 
 El simulador permite visualizar cómo un planificador Round-Robin administra el CPU entre procesos, mostrando el impacto del quantum, interrupciones y bloqueos. Es una herramienta didáctica para entender el cambio de contexto y su efecto sobre registros, con consumo mínimo de recursos (976 KB en un sistema con 15 GB de RAM).
 
